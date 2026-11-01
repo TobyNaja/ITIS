@@ -1,0 +1,120 @@
+===== T9-R02 =====
+restart_command (config):  restart_command: "/usr/bin/false"
+baseline HEALTHY · suricata pid 14302 · last stats: "timestamp":"2026-09-25T20:55:05.591737+0700" "uptime":20 
+fault: suricata.sh stop at 2026-09-25T13:55:11.661425900Z -> rc=0
+no-process
+engine         : 2026-09-25T13:55:10Z -> 2026-09-25T13:57:12Z
+log lines      : 1513-1553
+delta          : {'security_events': 0, 'correlated_patterns': 0, 'risk_assessments': 0, 'decisions': 0, 'actions': 0, 'active_blocks': 0, 'experiment_timestamps': 0, 'recovery_events': 3}
+suricata pid   : before=14302 · at engine stop=none
+--- health/recovery log
+2026-09-25T13:55:25Z WARNING  security_engine.health.monitor :: Suricata health = DEGRADED (PROCESS_DOWN, stats_age=13.0s/30s)
+2026-09-25T13:55:25Z WARNING  security_engine.health.recovery :: เริ่ม recovery Suricata attempt 1/3 (PROCESS_DOWN)
+2026-09-25T13:55:25Z ERROR    security_engine.health.suricata_controller :: restart Suricata ไม่สำเร็จที่ admin@192.168.227.150: rc=1: ** WARNING: connection is not using a post-quantum 
+2026-09-25T13:55:25Z ERROR    security_engine.health.recovery :: recovery attempt 1/3 ล้มเหลว: rc=1: ** WARNING: connection is not using a post-quantum key exchange algorithm.
+2026-09-25T13:55:25Z WARNING  security_engine.health.recovery :: เริ่ม recovery Suricata attempt 2/3 (PROCESS_DOWN)
+2026-09-25T13:55:25Z ERROR    security_engine.health.suricata_controller :: restart Suricata ไม่สำเร็จที่ admin@192.168.227.150: rc=1: ** WARNING: connection is not using a post-quantum 
+2026-09-25T13:55:25Z ERROR    security_engine.health.recovery :: recovery attempt 2/3 ล้มเหลว: rc=1: ** WARNING: connection is not using a post-quantum key exchange algorithm.
+2026-09-25T13:55:25Z WARNING  security_engine.health.recovery :: เริ่ม recovery Suricata attempt 3/3 (PROCESS_DOWN)
+2026-09-25T13:55:25Z ERROR    security_engine.health.suricata_controller :: restart Suricata ไม่สำเร็จที่ admin@192.168.227.150: rc=1: ** WARNING: connection is not using a post-quantum 
+2026-09-25T13:55:26Z CRITICAL security_engine.health.recovery :: recovery Suricata ล้มครบ 3 ครั้ง (rc=1: ** WARNING: connection is not using a post-quantum key exchange algorithm.
+** The server may need to be upgraded. See https://openssh.com/pq.html) — CRITICAL engine ทำงานต่อแต่ IDS อาจไม่ส่ง event แล้ว
+2026-09-25T13:55:41Z WARNING  security_engine.health.monitor :: Suricata health = DEGRADED (PROCESS_DOWN, stats_age=28.8s/30s)
+HEALTHY after fault: 0
+recovery_event : (9, '2026-09-25T13:55:25.537096+00:00', 'suricata', 'PROCESS_DOWN', 1, 'FAIL', 'rc=1: ** WARNING: connection is not using a post-quantum key exchange algorithm.\n** This session may be vulnerable to "store now, decrypt later" attacks.\n** The server may need to be upgraded. See https://openssh.com/pq.html')
+recovery_event : (10, '2026-09-25T13:55:25.745477+00:00', 'suricata', 'PROCESS_DOWN', 2, 'FAIL', 'rc=1: ** WARNING: connection is not using a post-quantum key exchange algorithm.\n** This session may be vulnerable to "store now, decrypt later" attacks.\n** The server may need to be upgraded. See https://openssh.com/pq.html')
+recovery_event : (11, '2026-09-25T13:55:25.969682+00:00', 'suricata', 'PROCESS_DOWN', 3, 'CRITICAL', 'rc=1: ** WARNING: connection is not using a post-quantum key exchange algorithm.\n** This session may be vulnerable to "store now, decrypt later" attacks.\n** The server may need to be upgraded. See https://openssh.com/pq.html')
+restore: suricata.sh start -> rc=0
+restore pid    : 418
+stats after    : "timestamp":"2026-09-25T20:57:25.929041+0700" "uptime":10 
+suricata pid   : final=418
+===== T9-R03 =====
+restart_command (config):  restart_command: "/usr/bin/false"
+baseline HEALTHY · suricata pid 418 · last stats: "timestamp":"2026-09-25T20:57:35.930563+0700" "uptime":20 
+fault: suricata.sh stop at 2026-09-25T13:57:36.058035700Z -> rc=0
+no-process
+engine         : 2026-09-25T13:57:34Z -> 2026-09-25T13:59:36Z
+log lines      : 1554-1595
+delta          : {'security_events': 0, 'correlated_patterns': 0, 'risk_assessments': 0, 'decisions': 0, 'actions': 0, 'active_blocks': 0, 'experiment_timestamps': 0, 'recovery_events': 3}
+suricata pid   : before=418 · at engine stop=none
+--- health/recovery log
+2026-09-25T13:57:49Z WARNING  security_engine.health.monitor :: Suricata health = DEGRADED (PROCESS_DOWN, stats_age=12.0s/30s)
+2026-09-25T13:57:49Z WARNING  security_engine.health.recovery :: เริ่ม recovery Suricata attempt 1/3 (PROCESS_DOWN)
+2026-09-25T13:57:49Z ERROR    security_engine.health.suricata_controller :: restart Suricata ไม่สำเร็จที่ admin@192.168.227.150: rc=1: ** WARNING: connection is not using a post-quantum 
+2026-09-25T13:57:50Z ERROR    security_engine.health.recovery :: recovery attempt 1/3 ล้มเหลว: rc=1: ** WARNING: connection is not using a post-quantum key exchange algorithm.
+2026-09-25T13:57:50Z WARNING  security_engine.health.recovery :: เริ่ม recovery Suricata attempt 2/3 (PROCESS_DOWN)
+2026-09-25T13:57:50Z ERROR    security_engine.health.suricata_controller :: restart Suricata ไม่สำเร็จที่ admin@192.168.227.150: rc=1: ** WARNING: connection is not using a post-quantum 
+2026-09-25T13:57:50Z ERROR    security_engine.health.recovery :: recovery attempt 2/3 ล้มเหลว: rc=1: ** WARNING: connection is not using a post-quantum key exchange algorithm.
+2026-09-25T13:57:50Z WARNING  security_engine.health.recovery :: เริ่ม recovery Suricata attempt 3/3 (PROCESS_DOWN)
+2026-09-25T13:57:50Z ERROR    security_engine.health.suricata_controller :: restart Suricata ไม่สำเร็จที่ admin@192.168.227.150: rc=1: ** WARNING: connection is not using a post-quantum 
+2026-09-25T13:57:50Z CRITICAL security_engine.health.recovery :: recovery Suricata ล้มครบ 3 ครั้ง (rc=1: ** WARNING: connection is not using a post-quantum key exchange algorithm.
+** The server may need to be upgraded. See https://openssh.com/pq.html) — CRITICAL engine ทำงานต่อแต่ IDS อาจไม่ส่ง event แล้ว
+2026-09-25T13:58:05Z WARNING  security_engine.health.monitor :: Suricata health = DEGRADED (PROCESS_DOWN, stats_age=27.9s/30s)
+HEALTHY after fault: 0
+recovery_event : (12, '2026-09-25T13:57:49.968764+00:00', 'suricata', 'PROCESS_DOWN', 1, 'FAIL', 'rc=1: ** WARNING: connection is not using a post-quantum key exchange algorithm.\n** This session may be vulnerable to "store now, decrypt later" attacks.\n** The server may need to be upgraded. See https://openssh.com/pq.html')
+recovery_event : (13, '2026-09-25T13:57:50.262321+00:00', 'suricata', 'PROCESS_DOWN', 2, 'FAIL', 'rc=1: ** WARNING: connection is not using a post-quantum key exchange algorithm.\n** This session may be vulnerable to "store now, decrypt later" attacks.\n** The server may need to be upgraded. See https://openssh.com/pq.html')
+recovery_event : (14, '2026-09-25T13:57:50.479246+00:00', 'suricata', 'PROCESS_DOWN', 3, 'CRITICAL', 'rc=1: ** WARNING: connection is not using a post-quantum key exchange algorithm.\n** This session may be vulnerable to "store now, decrypt later" attacks.\n** The server may need to be upgraded. See https://openssh.com/pq.html')
+restore: suricata.sh start -> rc=0
+restore pid    : 63997
+stats after    : "timestamp":"2026-09-25T20:59:51.306786+0700" "uptime":10 
+suricata pid   : final=63997
+===== T9-R04 =====
+restart_command (config):  restart_command: "/usr/bin/false"
+baseline HEALTHY · suricata pid 63997 · last stats: "timestamp":"2026-09-25T21:00:01.307879+0700" "uptime":20 
+fault: suricata.sh stop at 2026-09-25T14:00:01.267355700Z -> rc=0
+no-process
+engine         : 2026-09-25T13:59:59Z -> 2026-09-25T14:02:01Z
+log lines      : 1596-1637
+delta          : {'security_events': 0, 'correlated_patterns': 0, 'risk_assessments': 0, 'decisions': 0, 'actions': 0, 'active_blocks': 0, 'experiment_timestamps': 0, 'recovery_events': 3}
+suricata pid   : before=63997 · at engine stop=none
+--- health/recovery log
+2026-09-25T14:00:15Z WARNING  security_engine.health.monitor :: Suricata health = DEGRADED (PROCESS_DOWN, stats_age=13.0s/30s)
+2026-09-25T14:00:15Z WARNING  security_engine.health.recovery :: เริ่ม recovery Suricata attempt 1/3 (PROCESS_DOWN)
+2026-09-25T14:00:15Z ERROR    security_engine.health.suricata_controller :: restart Suricata ไม่สำเร็จที่ admin@192.168.227.150: rc=1: ** WARNING: connection is not using a post-quantum 
+2026-09-25T14:00:15Z ERROR    security_engine.health.recovery :: recovery attempt 1/3 ล้มเหลว: rc=1: ** WARNING: connection is not using a post-quantum key exchange algorithm.
+2026-09-25T14:00:15Z WARNING  security_engine.health.recovery :: เริ่ม recovery Suricata attempt 2/3 (PROCESS_DOWN)
+2026-09-25T14:00:15Z ERROR    security_engine.health.suricata_controller :: restart Suricata ไม่สำเร็จที่ admin@192.168.227.150: rc=1: ** WARNING: connection is not using a post-quantum 
+2026-09-25T14:00:15Z ERROR    security_engine.health.recovery :: recovery attempt 2/3 ล้มเหลว: rc=1: ** WARNING: connection is not using a post-quantum key exchange algorithm.
+2026-09-25T14:00:15Z WARNING  security_engine.health.recovery :: เริ่ม recovery Suricata attempt 3/3 (PROCESS_DOWN)
+2026-09-25T14:00:15Z ERROR    security_engine.health.suricata_controller :: restart Suricata ไม่สำเร็จที่ admin@192.168.227.150: rc=1: ** WARNING: connection is not using a post-quantum 
+2026-09-25T14:00:15Z CRITICAL security_engine.health.recovery :: recovery Suricata ล้มครบ 3 ครั้ง (rc=1: ** WARNING: connection is not using a post-quantum key exchange algorithm.
+** The server may need to be upgraded. See https://openssh.com/pq.html) — CRITICAL engine ทำงานต่อแต่ IDS อาจไม่ส่ง event แล้ว
+2026-09-25T14:00:31Z WARNING  security_engine.health.monitor :: Suricata health = DEGRADED (PROCESS_DOWN, stats_age=28.8s/30s)
+HEALTHY after fault: 0
+recovery_event : (15, '2026-09-25T14:00:15.321306+00:00', 'suricata', 'PROCESS_DOWN', 1, 'FAIL', 'rc=1: ** WARNING: connection is not using a post-quantum key exchange algorithm.\n** This session may be vulnerable to "store now, decrypt later" attacks.\n** The server may need to be upgraded. See https://openssh.com/pq.html')
+recovery_event : (16, '2026-09-25T14:00:15.552015+00:00', 'suricata', 'PROCESS_DOWN', 2, 'FAIL', 'rc=1: ** WARNING: connection is not using a post-quantum key exchange algorithm.\n** This session may be vulnerable to "store now, decrypt later" attacks.\n** The server may need to be upgraded. See https://openssh.com/pq.html')
+recovery_event : (17, '2026-09-25T14:00:15.784107+00:00', 'suricata', 'PROCESS_DOWN', 3, 'CRITICAL', 'rc=1: ** WARNING: connection is not using a post-quantum key exchange algorithm.\n** This session may be vulnerable to "store now, decrypt later" attacks.\n** The server may need to be upgraded. See https://openssh.com/pq.html')
+restore: suricata.sh start -> rc=0
+restore pid    : 33946
+stats after    : "timestamp":"2026-09-25T21:02:16.069841+0700" "uptime":11 
+suricata pid   : final=33946
+===== T9-R05 =====
+restart_command (config):  restart_command: "/usr/bin/false"
+baseline HEALTHY · suricata pid 33946 · last stats: "timestamp":"2026-09-25T21:02:26.071836+0700" "uptime":21 
+fault: suricata.sh stop at 2026-09-25T14:02:26.193671200Z -> rc=0
+no-process
+engine         : 2026-09-25T14:02:24Z -> 2026-09-25T14:04:26Z
+log lines      : 1638-1679
+delta          : {'security_events': 0, 'correlated_patterns': 0, 'risk_assessments': 0, 'decisions': 0, 'actions': 0, 'active_blocks': 0, 'experiment_timestamps': 0, 'recovery_events': 3}
+suricata pid   : before=33946 · at engine stop=none
+--- health/recovery log
+2026-09-25T14:02:39Z WARNING  security_engine.health.monitor :: Suricata health = DEGRADED (PROCESS_DOWN, stats_age=13.0s/30s)
+2026-09-25T14:02:39Z WARNING  security_engine.health.recovery :: เริ่ม recovery Suricata attempt 1/3 (PROCESS_DOWN)
+2026-09-25T14:02:40Z ERROR    security_engine.health.suricata_controller :: restart Suricata ไม่สำเร็จที่ admin@192.168.227.150: rc=1: ** WARNING: connection is not using a post-quantum 
+2026-09-25T14:02:40Z ERROR    security_engine.health.recovery :: recovery attempt 1/3 ล้มเหลว: rc=1: ** WARNING: connection is not using a post-quantum key exchange algorithm.
+2026-09-25T14:02:40Z WARNING  security_engine.health.recovery :: เริ่ม recovery Suricata attempt 2/3 (PROCESS_DOWN)
+2026-09-25T14:02:40Z ERROR    security_engine.health.suricata_controller :: restart Suricata ไม่สำเร็จที่ admin@192.168.227.150: rc=1: ** WARNING: connection is not using a post-quantum 
+2026-09-25T14:02:40Z ERROR    security_engine.health.recovery :: recovery attempt 2/3 ล้มเหลว: rc=1: ** WARNING: connection is not using a post-quantum key exchange algorithm.
+2026-09-25T14:02:40Z WARNING  security_engine.health.recovery :: เริ่ม recovery Suricata attempt 3/3 (PROCESS_DOWN)
+2026-09-25T14:02:40Z ERROR    security_engine.health.suricata_controller :: restart Suricata ไม่สำเร็จที่ admin@192.168.227.150: rc=1: ** WARNING: connection is not using a post-quantum 
+2026-09-25T14:02:40Z CRITICAL security_engine.health.recovery :: recovery Suricata ล้มครบ 3 ครั้ง (rc=1: ** WARNING: connection is not using a post-quantum key exchange algorithm.
+** The server may need to be upgraded. See https://openssh.com/pq.html) — CRITICAL engine ทำงานต่อแต่ IDS อาจไม่ส่ง event แล้ว
+2026-09-25T14:02:55Z WARNING  security_engine.health.monitor :: Suricata health = DEGRADED (PROCESS_DOWN, stats_age=28.8s/30s)
+HEALTHY after fault: 0
+recovery_event : (18, '2026-09-25T14:02:40.076671+00:00', 'suricata', 'PROCESS_DOWN', 1, 'FAIL', 'rc=1: ** WARNING: connection is not using a post-quantum key exchange algorithm.\n** This session may be vulnerable to "store now, decrypt later" attacks.\n** The server may need to be upgraded. See https://openssh.com/pq.html')
+recovery_event : (19, '2026-09-25T14:02:40.308180+00:00', 'suricata', 'PROCESS_DOWN', 2, 'FAIL', 'rc=1: ** WARNING: connection is not using a post-quantum key exchange algorithm.\n** This session may be vulnerable to "store now, decrypt later" attacks.\n** The server may need to be upgraded. See https://openssh.com/pq.html')
+recovery_event : (20, '2026-09-25T14:02:40.523686+00:00', 'suricata', 'PROCESS_DOWN', 3, 'CRITICAL', 'rc=1: ** WARNING: connection is not using a post-quantum key exchange algorithm.\n** This session may be vulnerable to "store now, decrypt later" attacks.\n** The server may need to be upgraded. See https://openssh.com/pq.html')
+restore: suricata.sh start -> rc=0
+restore pid    : 19279
+stats after    : "timestamp":"2026-09-25T21:04:40.975367+0700" "uptime":10 
+suricata pid   : final=19279

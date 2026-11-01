@@ -1,0 +1,2 @@
+[T11-R02] Sensitivity Analysis: 5 EVE events
+[T11-R02] ต้องทำเอง: รัน pattern เดียวกันซ้ำด้วย risk.weight_set = A, B, C แล้วบันทึก S/F/T/C + risk_score + risk_level + decision

@@ -1,0 +1,1 @@
+{"timestamp": "2026-09-24T15:35:07.503282+0000", "event_type": "alert", "src_ip": "198.51.100.77", "src_port": 40000, "dest_ip": "198.51.100.10", "dest_port": 4333, "proto": "TCP", "alert": {"signature_id": 2010935, "signature": "ET SCAN Suspicious inbound to mSQL port 4333", "severity": 2, "category": "Attempted Information Leak"}}

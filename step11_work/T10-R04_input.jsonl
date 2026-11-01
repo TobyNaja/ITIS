@@ -1,0 +1,1 @@
+{"timestamp": "2026-09-25T14:07:10.855552+0000", "event_type": "alert", "src_ip": "198.51.100.77", "src_port": 40000, "dest_ip": "198.51.100.10", "dest_port": 22, "proto": "TCP", "alert": {"signature_id": 2001219, "signature": "ET SCAN Potential SSH Scan", "severity": 1, "category": "Attempted Information Leak"}}

@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ITIS Quiz — ทบทวนความรู้</title>
+  <meta name="description" content="แบบทดสอบทบทวนรายวิชา Information Technology Infrastructure Security แยกตาม Week">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="#/">
+        <span class="brand-mark" aria-hidden="true">IT</span>
+        <span class="brand-text">ITIS Quiz</span>
+      </a>
+      <nav class="nav" aria-label="เมนูหลัก">
+        <a href="#/" data-nav="home">หน้าหลัก</a>
+        <a href="#/weeks" data-nav="weeks">เลือก Week</a>
+        <a href="#/modes" data-nav="modes">โหมดฝึก</a>
+        <a href="#/history" data-nav="history">ประวัติ</a>
+      </nav>
+      <button class="icon-btn" id="theme-toggle" type="button" aria-label="สลับธีมสว่าง/มืด" title="สลับธีม">◐</button>
+    </div>
+  </header>
+
+  <main id="app" class="container" tabindex="-1"></main>
+
+  <div id="modal-root"></div>
+
+  <!-- ข้อมูลข้อสอบ (แยกจาก UI) — เพิ่ม Week ใหม่ได้โดยเพิ่มไฟล์ใน js/data แล้วใส่ script ด้านล่าง -->
+  <script src="js/data/course.js"></script>
+  <script src="js/data/week06.js"></script>
+  <script src="js/data/week07-08.js"></script>
+  <script src="js/data/week11.js"></script>
+  <script src="js/data/week12-13.js"></script>
+  <script src="js/data/week14.js"></script>
+  <script src="js/data/week15.js"></script>
+
+  <!-- ระบบ -->
+  <script src="js/storage.js"></script>
+  <script src="js/engine.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

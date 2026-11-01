@@ -1,0 +1,48 @@
+===== T2-R02  =====
+2026-09-24T15:33:44Z INFO     security_engine.ingestion.eve_reader :: เริ่มอ่าน EV
+injected 1 events at 2026-09-24T15:33:49.307036700Z ([T2-R02] Single Medium Alert: 1 EVE events)
+engine         : 2026-09-24T15:33:44Z -> 2026-09-24T15:34:15Z
+log lines      : 210-219
+delta          : {'security_events': 1, 'correlated_patterns': 0, 'risk_assessments': 0, 'decisions': 0, 'actions': 0, 'active_blocks': 0, 'experiment_timestamps': 0, 'recovery_events': 0}
+pf before/after: 0 / 0
+suricata pid   : 89951 -> 89951
+HEALTHY/DEGRADED: 3 / 0
+decisions log  :       1 matched=False decision=None;
+WARNING/ERROR  : 0
+FR-15 rows     : 0
+===== T2-R03  =====
+2026-09-24T15:34:23Z INFO     security_engine.ingestion.eve_reader :: เริ่มอ่าน EV
+injected 1 events at 2026-09-24T15:34:28.299707100Z ([T2-R03] Single Medium Alert: 1 EVE events)
+engine         : 2026-09-24T15:34:23Z -> 2026-09-24T15:34:54Z
+log lines      : 220-229
+delta          : {'security_events': 1, 'correlated_patterns': 0, 'risk_assessments': 0, 'decisions': 0, 'actions': 0, 'active_blocks': 0, 'experiment_timestamps': 0, 'recovery_events': 0}
+pf before/after: 0 / 0
+suricata pid   : 89951 -> 89951
+HEALTHY/DEGRADED: 3 / 0
+decisions log  :       1 matched=False decision=None;
+WARNING/ERROR  : 0
+FR-15 rows     : 0
+===== T2-R04  =====
+2026-09-24T15:35:03Z INFO     security_engine.ingestion.eve_reader :: เริ่มอ่าน EV
+injected 1 events at 2026-09-24T15:35:07.635107000Z ([T2-R04] Single Medium Alert: 1 EVE events)
+engine         : 2026-09-24T15:35:03Z -> 2026-09-24T15:35:33Z
+log lines      : 230-239
+delta          : {'security_events': 1, 'correlated_patterns': 0, 'risk_assessments': 0, 'decisions': 0, 'actions': 0, 'active_blocks': 0, 'experiment_timestamps': 0, 'recovery_events': 0}
+pf before/after: 0 / 0
+suricata pid   : 89951 -> 89951
+HEALTHY/DEGRADED: 3 / 0
+decisions log  :       1 matched=False decision=None;
+WARNING/ERROR  : 0
+FR-15 rows     : 0
+===== T2-R05  =====
+2026-09-24T15:35:42Z INFO     security_engine.ingestion.eve_reader :: เริ่มอ่าน EV
+injected 1 events at 2026-09-24T15:35:46.921746700Z ([T2-R05] Single Medium Alert: 1 EVE events)
+engine         : 2026-09-24T15:35:42Z -> 2026-09-24T15:36:12Z
+log lines      : 240-249
+delta          : {'security_events': 1, 'correlated_patterns': 0, 'risk_assessments': 0, 'decisions': 0, 'actions': 0, 'active_blocks': 0, 'experiment_timestamps': 0, 'recovery_events': 0}
+pf before/after: 0 / 0
+suricata pid   : 89951 -> 89951
+HEALTHY/DEGRADED: 3 / 0
+decisions log  :       1 matched=False decision=None;
+WARNING/ERROR  : 0
+FR-15 rows     : 0

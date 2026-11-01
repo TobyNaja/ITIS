@@ -1,0 +1,100 @@
+===== T7-R01  =====
+2026-09-24T16:40:32Z INFO     security_engine.ingestion.eve_reader :: เริ่มอ่าน EV
+injected 5 events at 2026-09-24T16:40:36.800947000Z ([T7-R01] Enforcement Verification: 5 EVE events)
+midcheck @+10s (16:40:47Z) pfctl -t ITIS_BLOCK_TEST -T show: [198.51.100.77 ]
+engine         : 2026-09-24T16:40:32Z -> 2026-09-24T16:45:51Z
+log lines      : 1025-1086
+delta          : {'security_events': 5, 'correlated_patterns': 1, 'risk_assessments': 1, 'decisions': 1, 'actions': 2, 'active_blocks': 0, 'experiment_timestamps': 1, 'recovery_events': 0}
+pf before/after: 0 / 0
+suricata pid   : 89951 -> 89951
+HEALTHY/DEGRADED: 22 / 0
+decisions log  :       4 matched=False decision=None;      1 matched=True decision=BLOCK;
+WARNING/ERROR  : 0
+FR-15 rows     : 1
+  notes=run=T7-R01; mode=injection; decision=BLOCK; suppressed=0
+  present=['t_event', 't_detection', 't_decision', 't_block_cmd', 't_block_verified'] monotonic=True
+  M1=894.6 M2=81.7 M3=526.9 M4=1503.2 ms
+last decision  : id=21 RULE-001 BLOCK allowlisted=0 S/F/T/C=75.0/70.0/100.0/80.0 set=A risk=79.5 HIGH
+recent action  : {'id': 32, 'decision_id': 21, 'timestamp': '2026-09-24T16:45:39.170311+00:00', 'src_ip': '198.51.100.77', 'action': 'UNBLOCK', 'duration_sec': None, 'command_result': 'SUCCESS', 'verify_result': 'VERIFIED', 'error': None}
+recent action  : {'id': 31, 'decision_id': 21, 'timestamp': '2026-09-24T16:40:38.181917+00:00', 'src_ip': '198.51.100.77', 'action': 'BLOCK', 'duration_sec': 300, 'command_result': 'SUCCESS', 'verify_result': 'VERIFIED', 'error': None}
+active_block   : {'src_ip': '198.51.100.77', 'blocked_at': '2026-09-24T16:40:38.122064+00:00', 'expires_at': '2026-09-24T16:45:38.122064+00:00', 'action_id': 31, 'status': 'EXPIRED'}
+===== T7-R02  =====
+2026-09-24T16:46:02Z INFO     security_engine.ingestion.eve_reader :: เริ่มอ่าน EV
+injected 5 events at 2026-09-24T16:46:06.662168700Z ([T7-R02] Enforcement Verification: 5 EVE events)
+midcheck @+10s (16:46:17Z) pfctl -t ITIS_BLOCK_TEST -T show: [198.51.100.77 ]
+engine         : 2026-09-24T16:46:02Z -> 2026-09-24T16:51:21Z
+log lines      : 1087-1148
+delta          : {'security_events': 5, 'correlated_patterns': 1, 'risk_assessments': 1, 'decisions': 1, 'actions': 2, 'active_blocks': 0, 'experiment_timestamps': 1, 'recovery_events': 0}
+pf before/after: 0 / 0
+suricata pid   : 89951 -> 89951
+HEALTHY/DEGRADED: 22 / 0
+decisions log  :       4 matched=False decision=None;      1 matched=True decision=BLOCK;
+WARNING/ERROR  : 0
+FR-15 rows     : 1
+  notes=run=T7-R02; mode=injection; decision=BLOCK; suppressed=0
+  present=['t_event', 't_detection', 't_decision', 't_block_cmd', 't_block_verified'] monotonic=True
+  M1=1119.1 M2=77.1 M3=692.1 M4=1888.3 ms
+last decision  : id=22 RULE-001 BLOCK allowlisted=0 S/F/T/C=75.0/70.0/100.0/80.0 set=A risk=79.5 HIGH
+recent action  : {'id': 34, 'decision_id': 22, 'timestamp': '2026-09-24T16:51:09.650904+00:00', 'src_ip': '198.51.100.77', 'action': 'UNBLOCK', 'duration_sec': None, 'command_result': 'SUCCESS', 'verify_result': 'VERIFIED', 'error': None}
+recent action  : {'id': 33, 'decision_id': 22, 'timestamp': '2026-09-24T16:46:08.431008+00:00', 'src_ip': '198.51.100.77', 'action': 'BLOCK', 'duration_sec': 300, 'command_result': 'SUCCESS', 'verify_result': 'VERIFIED', 'error': None}
+active_block   : {'src_ip': '198.51.100.77', 'blocked_at': '2026-09-24T16:46:08.367146+00:00', 'expires_at': '2026-09-24T16:51:08.367146+00:00', 'action_id': 33, 'status': 'EXPIRED'}
+===== T7-R03  =====
+2026-09-24T16:51:31Z INFO     security_engine.ingestion.eve_reader :: เริ่มอ่าน EV
+injected 5 events at 2026-09-24T16:51:36.391919200Z ([T7-R03] Enforcement Verification: 5 EVE events)
+midcheck @+10s (16:51:47Z) pfctl -t ITIS_BLOCK_TEST -T show: [198.51.100.77 ]
+engine         : 2026-09-24T16:51:31Z -> 2026-09-24T16:56:51Z
+log lines      : 1149-1211
+delta          : {'security_events': 6, 'correlated_patterns': 1, 'risk_assessments': 1, 'decisions': 1, 'actions': 2, 'active_blocks': 0, 'experiment_timestamps': 1, 'recovery_events': 0}
+pf before/after: 0 / 0
+suricata pid   : 89951 -> 89951
+HEALTHY/DEGRADED: 22 / 0
+decisions log  :       5 matched=False decision=None;      1 matched=True decision=BLOCK;
+WARNING/ERROR  : 0
+FR-15 rows     : 1
+  notes=run=T7-R03; mode=injection; decision=BLOCK; suppressed=0
+  present=['t_event', 't_detection', 't_decision', 't_block_cmd', 't_block_verified'] monotonic=True
+  M1=945.8 M2=59.8 M3=603.5 M4=1609.0 ms
+last decision  : id=23 RULE-001 BLOCK allowlisted=0 S/F/T/C=75.0/70.0/100.0/80.0 set=A risk=79.5 HIGH
+recent action  : {'id': 36, 'decision_id': 23, 'timestamp': '2026-09-24T16:56:38.864948+00:00', 'src_ip': '198.51.100.77', 'action': 'UNBLOCK', 'duration_sec': None, 'command_result': 'SUCCESS', 'verify_result': 'VERIFIED', 'error': None}
+recent action  : {'id': 35, 'decision_id': 23, 'timestamp': '2026-09-24T16:51:37.867367+00:00', 'src_ip': '198.51.100.77', 'action': 'BLOCK', 'duration_sec': 300, 'command_result': 'SUCCESS', 'verify_result': 'VERIFIED', 'error': None}
+active_block   : {'src_ip': '198.51.100.77', 'blocked_at': '2026-09-24T16:51:37.807471+00:00', 'expires_at': '2026-09-24T16:56:37.807471+00:00', 'action_id': 35, 'status': 'EXPIRED'}
+===== T7-R04  =====
+2026-09-24T16:57:01Z INFO     security_engine.ingestion.eve_reader :: เริ่มอ่าน EV
+injected 5 events at 2026-09-24T16:57:06.139091600Z ([T7-R04] Enforcement Verification: 5 EVE events)
+midcheck @+10s (16:57:16Z) pfctl -t ITIS_BLOCK_TEST -T show: [198.51.100.77 ]
+engine         : 2026-09-24T16:57:01Z -> 2026-09-24T17:02:21Z
+log lines      : 1212-1273
+delta          : {'security_events': 5, 'correlated_patterns': 1, 'risk_assessments': 1, 'decisions': 1, 'actions': 2, 'active_blocks': 0, 'experiment_timestamps': 1, 'recovery_events': 0}
+pf before/after: 0 / 0
+suricata pid   : 89951 -> 89951
+HEALTHY/DEGRADED: 22 / 0
+decisions log  :       4 matched=False decision=None;      1 matched=True decision=BLOCK;
+WARNING/ERROR  : 0
+FR-15 rows     : 1
+  notes=run=T7-R04; mode=injection; decision=BLOCK; suppressed=0
+  present=['t_event', 't_detection', 't_decision', 't_block_cmd', 't_block_verified'] monotonic=True
+  M1=956.1 M2=80.9 M3=971.7 M4=2008.6 ms
+last decision  : id=24 RULE-001 BLOCK allowlisted=0 S/F/T/C=75.0/70.0/100.0/80.0 set=A risk=79.5 HIGH
+recent action  : {'id': 38, 'decision_id': 24, 'timestamp': '2026-09-24T17:02:09.078226+00:00', 'src_ip': '198.51.100.77', 'action': 'UNBLOCK', 'duration_sec': None, 'command_result': 'SUCCESS', 'verify_result': 'VERIFIED', 'error': None}
+recent action  : {'id': 37, 'decision_id': 24, 'timestamp': '2026-09-24T16:57:08.035962+00:00', 'src_ip': '198.51.100.77', 'action': 'BLOCK', 'duration_sec': 300, 'command_result': 'SUCCESS', 'verify_result': 'VERIFIED', 'error': None}
+active_block   : {'src_ip': '198.51.100.77', 'blocked_at': '2026-09-24T16:57:07.907800+00:00', 'expires_at': '2026-09-24T17:02:07.907800+00:00', 'action_id': 37, 'status': 'EXPIRED'}
+===== T7-R05  =====
+2026-09-24T17:02:31Z INFO     security_engine.ingestion.eve_reader :: เริ่มอ่าน EV
+injected 5 events at 2026-09-24T17:02:35.911478100Z ([T7-R05] Enforcement Verification: 5 EVE events)
+midcheck @+10s (17:02:46Z) pfctl -t ITIS_BLOCK_TEST -T show: [198.51.100.77 ]
+engine         : 2026-09-24T17:02:31Z -> 2026-09-24T17:07:51Z
+log lines      : 1274-1336
+delta          : {'security_events': 5, 'correlated_patterns': 1, 'risk_assessments': 1, 'decisions': 1, 'actions': 2, 'active_blocks': 0, 'experiment_timestamps': 1, 'recovery_events': 0}
+pf before/after: 0 / 0
+suricata pid   : 89951 -> 89951
+HEALTHY/DEGRADED: 22 / 0
+decisions log  :       4 matched=False decision=None;      1 matched=True decision=BLOCK;
+WARNING/ERROR  : 0
+FR-15 rows     : 1
+  notes=run=T7-R05; mode=injection; decision=BLOCK; suppressed=0
+  present=['t_event', 't_detection', 't_decision', 't_block_cmd', 't_block_verified'] monotonic=True
+  M1=937.0 M2=56.9 M3=658.4 M4=1652.3 ms
+last decision  : id=25 RULE-001 BLOCK allowlisted=0 S/F/T/C=75.0/70.0/100.0/80.0 set=A risk=79.5 HIGH
+recent action  : {'id': 40, 'decision_id': 25, 'timestamp': '2026-09-24T17:07:38.798716+00:00', 'src_ip': '198.51.100.77', 'action': 'UNBLOCK', 'duration_sec': None, 'command_result': 'SUCCESS', 'verify_result': 'VERIFIED', 'error': None}
+recent action  : {'id': 39, 'decision_id': 25, 'timestamp': '2026-09-24T17:02:37.425491+00:00', 'src_ip': '198.51.100.77', 'action': 'BLOCK', 'duration_sec': 300, 'command_result': 'SUCCESS', 'verify_result': 'VERIFIED', 'error': None}
+active_block   : {'src_ip': '198.51.100.77', 'blocked_at': '2026-09-24T17:02:37.350400+00:00', 'expires_at': '2026-09-24T17:07:37.350400+00:00', 'action_id': 39, 'status': 'EXPIRED'}

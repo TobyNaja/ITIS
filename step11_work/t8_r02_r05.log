@@ -1,0 +1,76 @@
+===== T8-R02 =====
+restart_command (config):  restart_command: "/usr/local/etc/rc.d/suricata.sh restart"
+baseline HEALTHY · suricata pid 71902 · last stats: "timestamp":"2026-09-25T00:11:05.842260+0700" "uptime":140 
+fault: suricata.sh stop at 2026-09-24T17:11:13.795939800Z -> rc=0
+no-process
+engine         : 2026-09-24T17:11:12Z -> 2026-09-24T17:13:11Z
+log lines      : 1364-1390
+delta          : {'security_events': 0, 'correlated_patterns': 0, 'risk_assessments': 0, 'decisions': 0, 'actions': 0, 'active_blocks': 0, 'experiment_timestamps': 0, 'recovery_events': 1}
+suricata pid   : before=71902 · at engine stop=61041
+--- health/recovery log
+2026-09-24T17:11:27Z WARNING  security_engine.health.monitor :: Suricata health = DEGRADED (PROCESS_DOWN, stats_age=12.8s/30s)
+2026-09-24T17:11:27Z WARNING  security_engine.health.recovery :: เริ่ม recovery Suricata attempt 1/3 (PROCESS_DOWN)
+2026-09-24T17:11:29Z INFO     security_engine.health.suricata_controller :: สั่ง restart Suricata ที่ admin@192.168.227.150 แล้ว (/usr/local/etc/rc.d/suricata.sh restart)
+2026-09-24T17:11:34Z WARNING  security_engine.health.monitor :: Suricata health = DEGRADED (NO_NEW_STATS, stats_age=20.2s/30s)
+2026-09-24T17:11:40Z INFO     security_engine.health.recovery :: recovery Suricata สำเร็จที่ attempt 1/3
+HEALTHY after fault: 7
+recovery_event : (2, '2026-09-24T17:11:40.101624+00:00', 'suricata', 'PROCESS_DOWN', 1, 'SUCCESS', None)
+stats after    : "timestamp":"2026-09-25T00:13:20.066748+0700" "uptime":111 
+suricata pid   : final=61041
+===== T8-R03 =====
+restart_command (config):  restart_command: "/usr/local/etc/rc.d/suricata.sh restart"
+baseline HEALTHY · suricata pid 61041 · last stats: "timestamp":"2026-09-25T00:13:40.068604+0700" "uptime":131 
+fault: suricata.sh stop at 2026-09-24T17:13:44.250800000Z -> rc=0
+no-process
+engine         : 2026-09-24T17:13:42Z -> 2026-09-24T17:15:41Z
+log lines      : 1391-1417
+delta          : {'security_events': 0, 'correlated_patterns': 0, 'risk_assessments': 0, 'decisions': 0, 'actions': 0, 'active_blocks': 0, 'experiment_timestamps': 0, 'recovery_events': 1}
+suricata pid   : before=61041 · at engine stop=26150
+--- health/recovery log
+2026-09-24T17:13:58Z WARNING  security_engine.health.monitor :: Suricata health = DEGRADED (PROCESS_DOWN, stats_age=12.1s/30s)
+2026-09-24T17:13:58Z WARNING  security_engine.health.recovery :: เริ่ม recovery Suricata attempt 1/3 (PROCESS_DOWN)
+2026-09-24T17:14:00Z INFO     security_engine.health.suricata_controller :: สั่ง restart Suricata ที่ admin@192.168.227.150 แล้ว (/usr/local/etc/rc.d/suricata.sh restart)
+2026-09-24T17:14:05Z WARNING  security_engine.health.monitor :: Suricata health = DEGRADED (NO_NEW_STATS, stats_age=19.5s/30s)
+2026-09-24T17:14:10Z INFO     security_engine.health.recovery :: recovery Suricata สำเร็จที่ attempt 1/3
+HEALTHY after fault: 7
+recovery_event : (3, '2026-09-24T17:14:10.627520+00:00', 'suricata', 'PROCESS_DOWN', 1, 'SUCCESS', None)
+stats after    : "timestamp":"2026-09-25T00:15:50.490568+0700" "uptime":110 
+suricata pid   : final=26150
+===== T8-R04 =====
+restart_command (config):  restart_command: "/usr/local/etc/rc.d/suricata.sh restart"
+baseline HEALTHY · suricata pid 26150 · last stats: "timestamp":"2026-09-25T00:16:10.492026+0700" "uptime":130 
+fault: suricata.sh stop at 2026-09-24T17:16:15.288698400Z -> rc=0
+no-process
+engine         : 2026-09-24T17:16:13Z -> 2026-09-24T17:18:12Z
+log lines      : 1418-1444
+delta          : {'security_events': 0, 'correlated_patterns': 0, 'risk_assessments': 0, 'decisions': 0, 'actions': 0, 'active_blocks': 0, 'experiment_timestamps': 0, 'recovery_events': 1}
+suricata pid   : before=26150 · at engine stop=91927
+--- health/recovery log
+2026-09-24T17:16:29Z WARNING  security_engine.health.monitor :: Suricata health = DEGRADED (PROCESS_DOWN, stats_age=12.6s/30s)
+2026-09-24T17:16:29Z WARNING  security_engine.health.recovery :: เริ่ม recovery Suricata attempt 1/3 (PROCESS_DOWN)
+2026-09-24T17:16:31Z INFO     security_engine.health.suricata_controller :: สั่ง restart Suricata ที่ admin@192.168.227.150 แล้ว (/usr/local/etc/rc.d/suricata.sh restart)
+2026-09-24T17:16:36Z WARNING  security_engine.health.monitor :: Suricata health = DEGRADED (NO_NEW_STATS, stats_age=20.1s/30s)
+2026-09-24T17:16:41Z INFO     security_engine.health.recovery :: recovery Suricata สำเร็จที่ attempt 1/3
+HEALTHY after fault: 7
+recovery_event : (4, '2026-09-24T17:16:41.629243+00:00', 'suricata', 'PROCESS_DOWN', 1, 'SUCCESS', None)
+stats after    : "timestamp":"2026-09-25T00:18:21.624476+0700" "uptime":110 
+suricata pid   : final=91927
+===== T8-R05 =====
+restart_command (config):  restart_command: "/usr/local/etc/rc.d/suricata.sh restart"
+baseline HEALTHY · suricata pid 91927 · last stats: "timestamp":"2026-09-25T00:18:41.625727+0700" "uptime":130 
+fault: suricata.sh stop at 2026-09-24T17:18:46.021646600Z -> rc=0
+no-process
+engine         : 2026-09-24T17:18:44Z -> 2026-09-24T17:20:43Z
+log lines      : 1445-1471
+delta          : {'security_events': 0, 'correlated_patterns': 0, 'risk_assessments': 0, 'decisions': 0, 'actions': 0, 'active_blocks': 0, 'experiment_timestamps': 0, 'recovery_events': 1}
+suricata pid   : before=91927 · at engine stop=74714
+--- health/recovery log
+2026-09-24T17:18:59Z WARNING  security_engine.health.monitor :: Suricata health = DEGRADED (PROCESS_DOWN, stats_age=12.2s/30s)
+2026-09-24T17:18:59Z WARNING  security_engine.health.recovery :: เริ่ม recovery Suricata attempt 1/3 (PROCESS_DOWN)
+2026-09-24T17:19:02Z INFO     security_engine.health.suricata_controller :: สั่ง restart Suricata ที่ admin@192.168.227.150 แล้ว (/usr/local/etc/rc.d/suricata.sh restart)
+2026-09-24T17:19:07Z WARNING  security_engine.health.monitor :: Suricata health = DEGRADED (NO_NEW_STATS, stats_age=19.6s/30s)
+2026-09-24T17:19:12Z INFO     security_engine.health.recovery :: recovery Suricata สำเร็จที่ attempt 1/3
+HEALTHY after fault: 7
+recovery_event : (5, '2026-09-24T17:19:12.296889+00:00', 'suricata', 'PROCESS_DOWN', 1, 'SUCCESS', None)
+stats after    : "timestamp":"2026-09-25T00:20:52.315276+0700" "uptime":110 
+suricata pid   : final=74714

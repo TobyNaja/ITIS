@@ -1,0 +1,89 @@
+===== T3-R01  =====
+2026-09-24T15:36:52Z INFO     security_engine.ingestion.eve_reader :: เริ่มอ่าน EV
+injected 5 events at 2026-09-24T15:36:57.511634700Z ([T3-R01] Repeated Medium Alerts: 5 EVE events)
+engine         : 2026-09-24T15:36:52Z -> 2026-09-24T15:37:23Z
+log lines      : 250-263
+delta          : {'security_events': 5, 'correlated_patterns': 1, 'risk_assessments': 1, 'decisions': 1, 'actions': 1, 'active_blocks': 0, 'experiment_timestamps': 1, 'recovery_events': 0}
+pf before/after: 0 / 0
+suricata pid   : 89951 -> 89951
+HEALTHY/DEGRADED: 3 / 0
+decisions log  :       4 matched=False decision=None;      1 matched=True decision=ALERT;
+WARNING/ERROR  : 0
+FR-15 rows     : 1
+  notes=run=T3-R01; mode=injection; decision=ALERT; suppressed=0
+  present=['t_event', 't_detection', 't_decision'] monotonic=True
+  M1=887.4 M2=59.5 ms
+last decision  : id=1 RULE-002 ALERT allowlisted=0 S/F/T/C=50.0/70.0/100.0/80.0 set=A risk=69.5 HIGH
+recent action  : {'id': 1, 'decision_id': 1, 'timestamp': '2026-09-24T15:36:58.508264+00:00', 'src_ip': '198.51.100.77', 'action': 'ALERT', 'duration_sec': None, 'command_result': 'NOT_APPLICABLE', 'verify_result': 'NOT_APPLICABLE', 'error': None}
+===== T3-R02  =====
+2026-09-24T15:37:32Z INFO     security_engine.ingestion.eve_reader :: เริ่มอ่าน EV
+injected 5 events at 2026-09-24T15:37:36.924008600Z ([T3-R02] Repeated Medium Alerts: 5 EVE events)
+engine         : 2026-09-24T15:37:32Z -> 2026-09-24T15:38:02Z
+log lines      : 264-277
+delta          : {'security_events': 5, 'correlated_patterns': 1, 'risk_assessments': 1, 'decisions': 1, 'actions': 1, 'active_blocks': 0, 'experiment_timestamps': 1, 'recovery_events': 0}
+pf before/after: 0 / 0
+suricata pid   : 89951 -> 89951
+HEALTHY/DEGRADED: 3 / 0
+decisions log  :       4 matched=False decision=None;      1 matched=True decision=ALERT;
+WARNING/ERROR  : 0
+FR-15 rows     : 1
+  notes=run=T3-R02; mode=injection; decision=ALERT; suppressed=0
+  present=['t_event', 't_detection', 't_decision'] monotonic=True
+  M1=833.2 M2=60.2 ms
+last decision  : id=2 RULE-002 ALERT allowlisted=0 S/F/T/C=50.0/70.0/100.0/80.0 set=A risk=69.5 HIGH
+recent action  : {'id': 2, 'decision_id': 2, 'timestamp': '2026-09-24T15:37:37.874865+00:00', 'src_ip': '198.51.100.77', 'action': 'ALERT', 'duration_sec': None, 'command_result': 'NOT_APPLICABLE', 'verify_result': 'NOT_APPLICABLE', 'error': None}
+recent action  : {'id': 1, 'decision_id': 1, 'timestamp': '2026-09-24T15:36:58.508264+00:00', 'src_ip': '198.51.100.77', 'action': 'ALERT', 'duration_sec': None, 'command_result': 'NOT_APPLICABLE', 'verify_result': 'NOT_APPLICABLE', 'error': None}
+===== T3-R03  =====
+2026-09-24T15:38:11Z INFO     security_engine.ingestion.eve_reader :: เริ่มอ่าน EV
+injected 5 events at 2026-09-24T15:38:16.521552600Z ([T3-R03] Repeated Medium Alerts: 5 EVE events)
+engine         : 2026-09-24T15:38:11Z -> 2026-09-24T15:38:42Z
+log lines      : 278-291
+delta          : {'security_events': 5, 'correlated_patterns': 1, 'risk_assessments': 1, 'decisions': 1, 'actions': 1, 'active_blocks': 0, 'experiment_timestamps': 1, 'recovery_events': 0}
+pf before/after: 0 / 0
+suricata pid   : 89951 -> 89951
+HEALTHY/DEGRADED: 3 / 0
+decisions log  :       4 matched=False decision=None;      1 matched=True decision=ALERT;
+WARNING/ERROR  : 0
+FR-15 rows     : 1
+  notes=run=T3-R03; mode=injection; decision=ALERT; suppressed=0
+  present=['t_event', 't_detection', 't_decision'] monotonic=True
+  M1=863.3 M2=60.6 ms
+last decision  : id=3 RULE-002 ALERT allowlisted=0 S/F/T/C=50.0/70.0/100.0/80.0 set=A risk=69.5 HIGH
+recent action  : {'id': 3, 'decision_id': 3, 'timestamp': '2026-09-24T15:38:17.466979+00:00', 'src_ip': '198.51.100.77', 'action': 'ALERT', 'duration_sec': None, 'command_result': 'NOT_APPLICABLE', 'verify_result': 'NOT_APPLICABLE', 'error': None}
+recent action  : {'id': 2, 'decision_id': 2, 'timestamp': '2026-09-24T15:37:37.874865+00:00', 'src_ip': '198.51.100.77', 'action': 'ALERT', 'duration_sec': None, 'command_result': 'NOT_APPLICABLE', 'verify_result': 'NOT_APPLICABLE', 'error': None}
+===== T3-R04  =====
+2026-09-24T15:38:51Z INFO     security_engine.ingestion.eve_reader :: เริ่มอ่าน EV
+injected 5 events at 2026-09-24T15:38:56.235297600Z ([T3-R04] Repeated Medium Alerts: 5 EVE events)
+engine         : 2026-09-24T15:38:51Z -> 2026-09-24T15:39:22Z
+log lines      : 292-305
+delta          : {'security_events': 5, 'correlated_patterns': 1, 'risk_assessments': 1, 'decisions': 1, 'actions': 1, 'active_blocks': 0, 'experiment_timestamps': 1, 'recovery_events': 0}
+pf before/after: 0 / 0
+suricata pid   : 89951 -> 89951
+HEALTHY/DEGRADED: 3 / 0
+decisions log  :       4 matched=False decision=None;      1 matched=True decision=ALERT;
+WARNING/ERROR  : 0
+FR-15 rows     : 1
+  notes=run=T3-R04; mode=injection; decision=ALERT; suppressed=0
+  present=['t_event', 't_detection', 't_decision'] monotonic=True
+  M1=900.3 M2=118.1 ms
+last decision  : id=4 RULE-002 ALERT allowlisted=0 S/F/T/C=50.0/70.0/100.0/80.0 set=A risk=69.5 HIGH
+recent action  : {'id': 4, 'decision_id': 4, 'timestamp': '2026-09-24T15:38:57.317620+00:00', 'src_ip': '198.51.100.77', 'action': 'ALERT', 'duration_sec': None, 'command_result': 'NOT_APPLICABLE', 'verify_result': 'NOT_APPLICABLE', 'error': None}
+recent action  : {'id': 3, 'decision_id': 3, 'timestamp': '2026-09-24T15:38:17.466979+00:00', 'src_ip': '198.51.100.77', 'action': 'ALERT', 'duration_sec': None, 'command_result': 'NOT_APPLICABLE', 'verify_result': 'NOT_APPLICABLE', 'error': None}
+===== T3-R05  =====
+2026-09-24T15:39:31Z INFO     security_engine.ingestion.eve_reader :: เริ่มอ่าน EV
+injected 5 events at 2026-09-24T15:39:35.980870200Z ([T3-R05] Repeated Medium Alerts: 5 EVE events)
+engine         : 2026-09-24T15:39:31Z -> 2026-09-24T15:40:01Z
+log lines      : 306-319
+delta          : {'security_events': 5, 'correlated_patterns': 1, 'risk_assessments': 1, 'decisions': 1, 'actions': 1, 'active_blocks': 0, 'experiment_timestamps': 1, 'recovery_events': 0}
+pf before/after: 0 / 0
+suricata pid   : 89951 -> 89951
+HEALTHY/DEGRADED: 3 / 0
+decisions log  :       4 matched=False decision=None;      1 matched=True decision=ALERT;
+WARNING/ERROR  : 0
+FR-15 rows     : 1
+  notes=run=T3-R05; mode=injection; decision=ALERT; suppressed=0
+  present=['t_event', 't_detection', 't_decision'] monotonic=True
+  M1=966.3 M2=58.8 ms
+last decision  : id=5 RULE-002 ALERT allowlisted=0 S/F/T/C=50.0/70.0/100.0/80.0 set=A risk=69.5 HIGH
+recent action  : {'id': 5, 'decision_id': 5, 'timestamp': '2026-09-24T15:39:37.051050+00:00', 'src_ip': '198.51.100.77', 'action': 'ALERT', 'duration_sec': None, 'command_result': 'NOT_APPLICABLE', 'verify_result': 'NOT_APPLICABLE', 'error': None}
+recent action  : {'id': 4, 'decision_id': 4, 'timestamp': '2026-09-24T15:38:57.317620+00:00', 'src_ip': '198.51.100.77', 'action': 'ALERT', 'duration_sec': None, 'command_result': 'NOT_APPLICABLE', 'verify_result': 'NOT_APPLICABLE', 'error': None}

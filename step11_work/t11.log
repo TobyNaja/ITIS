@@ -1,0 +1,61 @@
+config:   weight_set: "A"                 # §3.5 Weight Set A/B/C
+===== T11-R01  =====
+2026-09-25T14:12:48Z INFO     security_engine.ingestion.eve_reader :: เริ่มอ่าน EV
+injected 5 events at 2026-09-25T14:12:53.474346400Z ([T11-R01] Sensitivity Analysis: 5 EVE events)
+engine         : 2026-09-25T14:12:48Z -> 2026-09-25T14:18:07Z
+log lines      : 1780-1842
+delta          : {'security_events': 6, 'correlated_patterns': 1, 'risk_assessments': 1, 'decisions': 1, 'actions': 2, 'active_blocks': 0, 'experiment_timestamps': 1, 'recovery_events': 0}
+pf before/after: 0 / 0
+suricata pid   : 19279 -> 19279
+HEALTHY/DEGRADED: 22 / 0
+decisions log  :       5 matched=False decision=None;      1 matched=True decision=BLOCK;
+WARNING/ERROR  : 0
+FR-15 rows     : 1
+  notes=run=T11-R01; mode=injection; decision=BLOCK; suppressed=0
+  present=['t_event', 't_detection', 't_decision', 't_block_cmd', 't_block_verified'] monotonic=True
+  M1=1003.6 M2=52.4 M3=599.1 M4=1655.1 ms
+last decision  : id=26 RULE-001 BLOCK allowlisted=0 S/F/T/C=75.0/70.0/100.0/80.0 set=A risk=79.5 HIGH
+recent action  : {'id': 42, 'decision_id': 26, 'timestamp': '2026-09-25T14:17:55.483695+00:00', 'src_ip': '198.51.100.77', 'action': 'UNBLOCK', 'duration_sec': None, 'command_result': 'SUCCESS', 'verify_result': 'VERIFIED', 'error': None}
+recent action  : {'id': 41, 'decision_id': 26, 'timestamp': '2026-09-25T14:12:54.987848+00:00', 'src_ip': '198.51.100.77', 'action': 'BLOCK', 'duration_sec': 300, 'command_result': 'SUCCESS', 'verify_result': 'VERIFIED', 'error': None}
+active_block   : {'src_ip': '198.51.100.77', 'blocked_at': '2026-09-25T14:12:54.929222+00:00', 'expires_at': '2026-09-25T14:17:54.929222+00:00', 'action_id': 41, 'status': 'EXPIRED'}
+config:   weight_set: "B"                 # §3.5 Weight Set A/B/C
+===== T11-R02  =====
+2026-09-25T14:18:18Z INFO     security_engine.ingestion.eve_reader :: เริ่มอ่าน EV
+injected 5 events at 2026-09-25T14:18:23.153081500Z ([T11-R02] Sensitivity Analysis: 5 EVE events)
+engine         : 2026-09-25T14:18:18Z -> 2026-09-25T14:23:37Z
+log lines      : 1843-1904
+delta          : {'security_events': 5, 'correlated_patterns': 1, 'risk_assessments': 1, 'decisions': 1, 'actions': 2, 'active_blocks': 0, 'experiment_timestamps': 1, 'recovery_events': 0}
+pf before/after: 0 / 0
+suricata pid   : 19279 -> 19279
+HEALTHY/DEGRADED: 22 / 0
+decisions log  :       4 matched=False decision=None;      1 matched=True decision=BLOCK;
+WARNING/ERROR  : 0
+FR-15 rows     : 1
+  notes=run=T11-R02; mode=injection; decision=BLOCK; suppressed=0
+  present=['t_event', 't_detection', 't_decision', 't_block_cmd', 't_block_verified'] monotonic=True
+  M1=892.8 M2=78.2 M3=672.0 M4=1642.9 ms
+last decision  : id=27 RULE-001 BLOCK allowlisted=0 S/F/T/C=75.0/70.0/100.0/80.0 set=B risk=80.5 CRITICAL
+recent action  : {'id': 44, 'decision_id': 27, 'timestamp': '2026-09-25T14:23:25.563423+00:00', 'src_ip': '198.51.100.77', 'action': 'UNBLOCK', 'duration_sec': None, 'command_result': 'SUCCESS', 'verify_result': 'VERIFIED', 'error': None}
+recent action  : {'id': 43, 'decision_id': 27, 'timestamp': '2026-09-25T14:18:24.687183+00:00', 'src_ip': '198.51.100.77', 'action': 'BLOCK', 'duration_sec': 300, 'command_result': 'SUCCESS', 'verify_result': 'VERIFIED', 'error': None}
+active_block   : {'src_ip': '198.51.100.77', 'blocked_at': '2026-09-25T14:18:24.598099+00:00', 'expires_at': '2026-09-25T14:23:24.598099+00:00', 'action_id': 43, 'status': 'EXPIRED'}
+config:   weight_set: "C"                 # §3.5 Weight Set A/B/C
+===== T11-R03  =====
+2026-09-25T14:23:48Z INFO     security_engine.ingestion.eve_reader :: เริ่มอ่าน EV
+injected 5 events at 2026-09-25T14:23:52.826250600Z ([T11-R03] Sensitivity Analysis: 5 EVE events)
+engine         : 2026-09-25T14:23:48Z -> 2026-09-25T14:29:06Z
+log lines      : 1905-1966
+delta          : {'security_events': 5, 'correlated_patterns': 1, 'risk_assessments': 1, 'decisions': 1, 'actions': 2, 'active_blocks': 0, 'experiment_timestamps': 1, 'recovery_events': 0}
+pf before/after: 0 / 0
+suricata pid   : 19279 -> 19279
+HEALTHY/DEGRADED: 22 / 0
+decisions log  :       4 matched=False decision=None;      1 matched=True decision=BLOCK;
+WARNING/ERROR  : 0
+FR-15 rows     : 1
+  notes=run=T11-R03; mode=injection; decision=BLOCK; suppressed=0
+  present=['t_event', 't_detection', 't_decision', 't_block_cmd', 't_block_verified'] monotonic=True
+  M1=960.9 M2=60.2 M3=581.9 M4=1603.0 ms
+last decision  : id=28 RULE-001 BLOCK allowlisted=0 S/F/T/C=75.0/70.0/100.0/80.0 set=C risk=78.5 HIGH
+recent action  : {'id': 46, 'decision_id': 28, 'timestamp': '2026-09-25T14:28:55.723362+00:00', 'src_ip': '198.51.100.77', 'action': 'UNBLOCK', 'duration_sec': None, 'command_result': 'SUCCESS', 'verify_result': 'VERIFIED', 'error': None}
+recent action  : {'id': 45, 'decision_id': 28, 'timestamp': '2026-09-25T14:23:54.337984+00:00', 'src_ip': '198.51.100.77', 'action': 'BLOCK', 'duration_sec': 300, 'command_result': 'SUCCESS', 'verify_result': 'VERIFIED', 'error': None}
+active_block   : {'src_ip': '198.51.100.77', 'blocked_at': '2026-09-25T14:23:54.258858+00:00', 'expires_at': '2026-09-25T14:28:54.258858+00:00', 'action_id': 45, 'status': 'EXPIRED'}
+  weight_set: "A"                 # §3.5 Weight Set A/B/C

@@ -1,0 +1,95 @@
+===== T4-R01  =====
+2026-09-24T15:40:49Z INFO     security_engine.ingestion.eve_reader :: เริ่มอ่าน EV
+injected 5 events at 2026-09-24T15:40:53.875805200Z ([T4-R01] Critical Pattern: 5 EVE events)
+engine         : 2026-09-24T15:40:49Z -> 2026-09-24T15:46:11Z
+log lines      : 320-382
+delta          : {'security_events': 5, 'correlated_patterns': 1, 'risk_assessments': 1, 'decisions': 1, 'actions': 2, 'active_blocks': 1, 'experiment_timestamps': 1, 'recovery_events': 0}
+pf before/after: 0 / 0
+suricata pid   : 89951 -> 89951
+HEALTHY/DEGRADED: 22 / 0
+decisions log  :       4 matched=False decision=None;      1 matched=True decision=BLOCK;
+WARNING/ERROR  : 0
+FR-15 rows     : 1
+  notes=run=T4-R01; mode=injection; decision=BLOCK; suppressed=0
+  present=['t_event', 't_detection', 't_decision', 't_block_cmd', 't_block_verified'] monotonic=True
+  M1=944.8 M2=61.1 M3=578.2 M4=1584.1 ms
+last decision  : id=6 RULE-001 BLOCK allowlisted=0 S/F/T/C=75.0/70.0/100.0/80.0 set=A risk=79.5 HIGH
+recent action  : {'id': 7, 'decision_id': 6, 'timestamp': '2026-09-24T15:45:56.701541+00:00', 'src_ip': '198.51.100.77', 'action': 'UNBLOCK', 'duration_sec': None, 'command_result': 'SUCCESS', 'verify_result': 'VERIFIED', 'error': None}
+recent action  : {'id': 6, 'decision_id': 6, 'timestamp': '2026-09-24T15:40:55.323752+00:00', 'src_ip': '198.51.100.77', 'action': 'BLOCK', 'duration_sec': 300, 'command_result': 'SUCCESS', 'verify_result': 'VERIFIED', 'error': None}
+active_block   : {'src_ip': '198.51.100.77', 'blocked_at': '2026-09-24T15:40:55.272438+00:00', 'expires_at': '2026-09-24T15:45:55.272438+00:00', 'action_id': 6, 'status': 'EXPIRED'}
+===== T4-R02  =====
+2026-09-24T15:46:18Z INFO     security_engine.ingestion.eve_reader :: เริ่มอ่าน EV
+injected 5 events at 2026-09-24T15:46:23.492150000Z ([T4-R02] Critical Pattern: 5 EVE events)
+engine         : 2026-09-24T15:46:18Z -> 2026-09-24T15:51:41Z
+log lines      : 383-445
+delta          : {'security_events': 5, 'correlated_patterns': 1, 'risk_assessments': 1, 'decisions': 1, 'actions': 2, 'active_blocks': 0, 'experiment_timestamps': 1, 'recovery_events': 0}
+pf before/after: 0 / 0
+suricata pid   : 89951 -> 89951
+HEALTHY/DEGRADED: 22 / 0
+decisions log  :       4 matched=False decision=None;      1 matched=True decision=BLOCK;
+WARNING/ERROR  : 0
+FR-15 rows     : 1
+  notes=run=T4-R02; mode=injection; decision=BLOCK; suppressed=0
+  present=['t_event', 't_detection', 't_decision', 't_block_cmd', 't_block_verified'] monotonic=True
+  M1=960.7 M2=96.6 M3=638.2 M4=1695.5 ms
+last decision  : id=7 RULE-001 BLOCK allowlisted=0 S/F/T/C=75.0/70.0/100.0/80.0 set=A risk=79.5 HIGH
+recent action  : {'id': 9, 'decision_id': 7, 'timestamp': '2026-09-24T15:51:26.424584+00:00', 'src_ip': '198.51.100.77', 'action': 'UNBLOCK', 'duration_sec': None, 'command_result': 'SUCCESS', 'verify_result': 'VERIFIED', 'error': None}
+recent action  : {'id': 8, 'decision_id': 7, 'timestamp': '2026-09-24T15:46:25.069484+00:00', 'src_ip': '198.51.100.77', 'action': 'BLOCK', 'duration_sec': 300, 'command_result': 'SUCCESS', 'verify_result': 'VERIFIED', 'error': None}
+active_block   : {'src_ip': '198.51.100.77', 'blocked_at': '2026-09-24T15:46:24.947387+00:00', 'expires_at': '2026-09-24T15:51:24.947387+00:00', 'action_id': 8, 'status': 'EXPIRED'}
+===== T4-R03  =====
+2026-09-24T15:51:48Z INFO     security_engine.ingestion.eve_reader :: เริ่มอ่าน EV
+injected 5 events at 2026-09-24T15:51:53.114989500Z ([T4-R03] Critical Pattern: 5 EVE events)
+engine         : 2026-09-24T15:51:48Z -> 2026-09-24T15:57:11Z
+log lines      : 446-509
+delta          : {'security_events': 6, 'correlated_patterns': 1, 'risk_assessments': 1, 'decisions': 1, 'actions': 2, 'active_blocks': 0, 'experiment_timestamps': 1, 'recovery_events': 0}
+pf before/after: 0 / 0
+suricata pid   : 89951 -> 89951
+HEALTHY/DEGRADED: 22 / 0
+decisions log  :       5 matched=False decision=None;      1 matched=True decision=BLOCK;
+WARNING/ERROR  : 0
+FR-15 rows     : 1
+  notes=run=T4-R03; mode=injection; decision=BLOCK; suppressed=0
+  present=['t_event', 't_detection', 't_decision', 't_block_cmd', 't_block_verified'] monotonic=True
+  M1=945.1 M2=59.1 M3=632.2 M4=1636.4 ms
+last decision  : id=8 RULE-001 BLOCK allowlisted=0 S/F/T/C=75.0/70.0/100.0/80.0 set=A risk=79.5 HIGH
+recent action  : {'id': 11, 'decision_id': 8, 'timestamp': '2026-09-24T15:56:55.566492+00:00', 'src_ip': '198.51.100.77', 'action': 'UNBLOCK', 'duration_sec': None, 'command_result': 'SUCCESS', 'verify_result': 'VERIFIED', 'error': None}
+recent action  : {'id': 10, 'decision_id': 8, 'timestamp': '2026-09-24T15:51:54.606308+00:00', 'src_ip': '198.51.100.77', 'action': 'BLOCK', 'duration_sec': 300, 'command_result': 'SUCCESS', 'verify_result': 'VERIFIED', 'error': None}
+active_block   : {'src_ip': '198.51.100.77', 'blocked_at': '2026-09-24T15:51:54.531858+00:00', 'expires_at': '2026-09-24T15:56:54.531858+00:00', 'action_id': 10, 'status': 'EXPIRED'}
+===== T4-R04  =====
+2026-09-24T15:57:18Z INFO     security_engine.ingestion.eve_reader :: เริ่มอ่าน EV
+injected 5 events at 2026-09-24T15:57:22.922645700Z ([T4-R04] Critical Pattern: 5 EVE events)
+engine         : 2026-09-24T15:57:18Z -> 2026-09-24T16:02:41Z
+log lines      : 510-572
+delta          : {'security_events': 5, 'correlated_patterns': 1, 'risk_assessments': 1, 'decisions': 1, 'actions': 2, 'active_blocks': 0, 'experiment_timestamps': 1, 'recovery_events': 0}
+pf before/after: 0 / 0
+suricata pid   : 89951 -> 89951
+HEALTHY/DEGRADED: 22 / 0
+decisions log  :       4 matched=False decision=None;      1 matched=True decision=BLOCK;
+WARNING/ERROR  : 0
+FR-15 rows     : 1
+  notes=run=T4-R04; mode=injection; decision=BLOCK; suppressed=0
+  present=['t_event', 't_detection', 't_decision', 't_block_cmd', 't_block_verified'] monotonic=True
+  M1=906.4 M2=60.7 M3=546.4 M4=1513.4 ms
+last decision  : id=9 RULE-001 BLOCK allowlisted=0 S/F/T/C=75.0/70.0/100.0/80.0 set=A risk=79.5 HIGH
+recent action  : {'id': 13, 'decision_id': 9, 'timestamp': '2026-09-24T16:02:25.346087+00:00', 'src_ip': '198.51.100.77', 'action': 'UNBLOCK', 'duration_sec': None, 'command_result': 'SUCCESS', 'verify_result': 'VERIFIED', 'error': None}
+recent action  : {'id': 12, 'decision_id': 9, 'timestamp': '2026-09-24T15:57:24.308357+00:00', 'src_ip': '198.51.100.77', 'action': 'BLOCK', 'duration_sec': 300, 'command_result': 'SUCCESS', 'verify_result': 'VERIFIED', 'error': None}
+active_block   : {'src_ip': '198.51.100.77', 'blocked_at': '2026-09-24T15:57:24.216804+00:00', 'expires_at': '2026-09-24T16:02:24.216804+00:00', 'action_id': 12, 'status': 'EXPIRED'}
+===== T4-R05  =====
+2026-09-24T16:02:47Z INFO     security_engine.ingestion.eve_reader :: เริ่มอ่าน EV
+injected 5 events at 2026-09-24T16:02:52.441305000Z ([T4-R05] Critical Pattern: 5 EVE events)
+engine         : 2026-09-24T16:02:47Z -> 2026-09-24T16:08:11Z
+log lines      : 573-635
+delta          : {'security_events': 5, 'correlated_patterns': 1, 'risk_assessments': 1, 'decisions': 1, 'actions': 2, 'active_blocks': 0, 'experiment_timestamps': 1, 'recovery_events': 0}
+pf before/after: 0 / 0
+suricata pid   : 89951 -> 89951
+HEALTHY/DEGRADED: 22 / 0
+decisions log  :       4 matched=False decision=None;      1 matched=True decision=BLOCK;
+WARNING/ERROR  : 0
+FR-15 rows     : 1
+  notes=run=T4-R05; mode=injection; decision=BLOCK; suppressed=0
+  present=['t_event', 't_detection', 't_decision', 't_block_cmd', 't_block_verified'] monotonic=True
+  M1=896.7 M2=57.2 M3=583.4 M4=1537.3 ms
+last decision  : id=10 RULE-001 BLOCK allowlisted=0 S/F/T/C=75.0/70.0/100.0/80.0 set=A risk=79.5 HIGH
+recent action  : {'id': 15, 'decision_id': 10, 'timestamp': '2026-09-24T16:07:54.923500+00:00', 'src_ip': '198.51.100.77', 'action': 'UNBLOCK', 'duration_sec': None, 'command_result': 'SUCCESS', 'verify_result': 'VERIFIED', 'error': None}
+recent action  : {'id': 14, 'decision_id': 10, 'timestamp': '2026-09-24T16:02:53.865440+00:00', 'src_ip': '198.51.100.77', 'action': 'BLOCK', 'duration_sec': 300, 'command_result': 'SUCCESS', 'verify_result': 'VERIFIED', 'error': None}
+active_block   : {'src_ip': '198.51.100.77', 'blocked_at': '2026-09-24T16:02:53.803294+00:00', 'expires_at': '2026-09-24T16:07:53.803294+00:00', 'action_id': 14, 'status': 'EXPIRED'}
